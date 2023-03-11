@@ -41,8 +41,8 @@ const Banner = () => {
               textTransform: 'capitalize',
             }}
           >
-            Get the latest information on your favourite Crypto Currencies
-            across the globe
+            Get the latest information on your favourite Cryptocurrencies across
+            the globe
           </Typography>
         </div>
         <Carousel />

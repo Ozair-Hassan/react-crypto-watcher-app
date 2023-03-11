@@ -44,7 +44,6 @@ const Carousel = () => {
         to={`/coin/${coin.id}`}
       >
         <img
-          className="height: 1rem;"
           src={coin?.image}
           alt={coin.name}
           style={{ marginBottom: 20, marginTop: 20, height: 80 }}

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import CoinGrid from '../components/CoinGrid'
+import CoinTable from '../components/CoinTable'
 import Banner from '../ui/Banner/Banner'
 import Search from '../ui/Search'
 
@@ -47,18 +48,19 @@ const Homepage = () => {
   return (
     <>
       <Banner />
-
-      <Search
-        getQuery={(q) => setQuery(q)}
-        searchText={searchText}
-        handleChange={handleSearchChange}
-      />
-      <CoinGrid
-        isLoading={isLoading}
-        items={filteredResults}
-      />
+      <CoinTable />
     </>
   )
 }
 
 export default Homepage
+
+// {/* <Search
+//   getQuery={(q) => setQuery(q)}
+//   searchText={searchText}
+//   handleChange={handleSearchChange}
+// /> */}
+// {/* <CoinGrid
+//         isLoading={isLoading}
+//         items={filteredResults}
+//       /> */}

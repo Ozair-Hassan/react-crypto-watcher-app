@@ -156,13 +156,58 @@ input[type='text'] {
   margin: 0;
 }
 
+.marketData {
+  align-self: start;
+  padding: 25;
+  padding-top: 10;
+  width: 100%;
+}
+
+.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25;
+  border-right: 2px solid grey;
+}
+
+.containerCoin {
+  padding-top: 25px;
+  display: flex;
+}
+
+.containerCoinInfo {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 40px;
+}
+
+.selectButton {
+  border: 1px solid gold;
+  border-radius: 5px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.selectButton:hover {
+  background-color: gold;
+  color: black;
+}
+
 @media (max-width: 800px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
   .cards {
     grid-template-columns: 1fr;
   }
@@ -170,5 +215,32 @@ input[type='text'] {
     width: 100%;
     height: 300px;
     object-fit: contain;
+  }
+}
+@media (max-width: 780px) {
+  .marketData {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1150px) {
+  .containerCoin {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar {
+    border-right: 0px;
+    border-bottom: 2px solid grey;
+    width: 95%;
+  }
+  .marketData {
+    display: flex;
+    justify-content: space-around;
+  }
+  .containerCoinInfo {
+    width: 100%;
+    margin-top: 0;
+    padding: 20;
+    padding-top: 0;
   }
 }

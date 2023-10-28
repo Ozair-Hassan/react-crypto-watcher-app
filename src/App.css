@@ -36,6 +36,7 @@ a {
 }
 .container {
   max-width: 100vw;
+  margin: auto;
 }
 
 .btn {
@@ -222,25 +223,25 @@ input[type='text'] {
     align-items: start;
     flex-direction: column;
   }
-}
-@media (max-width: 1150px) {
-  .containerCoin {
-    flex-direction: column;
-    align-items: center;
-  }
-  .sidebar {
-    border-right: 0px;
-    border-bottom: 2px solid grey;
-    width: 95%;
-  }
-  .marketData {
-    display: flex;
-    justify-content: space-around;
-  }
-  .containerCoinInfo {
-    width: 100%;
-    margin-top: 0;
-    padding: 20;
-    padding-top: 0;
+  @media (max-width: 1150px) {
+    .containerCoin {
+      flex-direction: column;
+      align-items: center;
+    }
+    .sidebar {
+      border-right: 0px;
+      border-bottom: 2px solid grey;
+      width: 95%;
+    }
+    .marketData {
+      display: flex;
+      justify-content: space-around;
+    }
+    .containerCoinInfo {
+      width: 100%;
+      margin-top: 0;
+      padding: 20;
+      padding-top: 0;
+    }
   }
 }

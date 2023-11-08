@@ -2,7 +2,29 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
+
+/* Hide the scrollbar by default */
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #14161a;
+}
+
+/* Show the scrollbar when the body has a class 'scrolling' */
+body.scrolling::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.scrolling::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+}
+
+/* Optional: Add smooth transitions */
+::-webkit-scrollbar-thumb {
+  transition: background 0.2s ease;
+}
+
 .bg-image {
   position: fixed;
   z-index: -2;

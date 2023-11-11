@@ -1,5 +1,7 @@
 React Crypto Watcher App
 
+Link to Live Site { https://crypto-watcher-kxj8.onrender.com }
+
 About the Application
 
 The React Crypto Watcher App is a web application that provides real-time information on cryptocurrency prices, market cap rankings, and individual coin details. It's designed to offer users a comprehensive overview of the crypto market with the ability to search and filter through different cryptocurrencies.

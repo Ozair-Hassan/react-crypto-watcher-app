@@ -1,6 +1,5 @@
 React Crypto Watcher App
 
-Link to Live Site { https://crypto-watcher-kxj8.onrender.com }
 
 About the Application
 
